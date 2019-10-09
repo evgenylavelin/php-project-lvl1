@@ -1,4 +1,7 @@
 {
     "name": "evgenylavelin/php-project-lvl1",
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+      ]    
 }
