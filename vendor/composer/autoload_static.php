@@ -9,6 +9,7 @@ class ComposerStaticInit38c41451413a055ceab5561716aeca6b
     public static $files = array (
         'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
         '94d107874694a1d3395d429300cc70be' => __DIR__ . '/../..' . '/src/cli.php',
+        '5504fe99a7d036c23e14935837af5ec3' => __DIR__ . '/../..' . '/src/CheckToEvenNumber.php',
     );
 
     public static $prefixesPsr0 = array (

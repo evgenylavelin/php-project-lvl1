@@ -5,11 +5,13 @@
         "wp-cli/php-cli-tools": "^0.11.11"
     },
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
       ],
     "autoload": {
         "files": [
-            "src/cli.php"
+            "src/cli.php",
+            "src/CheckToEvenNumber.php"
         ]
     },
     "require-dev": {
