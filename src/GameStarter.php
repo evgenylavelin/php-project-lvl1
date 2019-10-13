@@ -1,23 +1,28 @@
 <?php
 
-namespace BrainGames\CheckToEvenNumber;
+namespace BrainGames\games;
+
+class DefaultValue
+{
+    public const LIMIT_COUNT_GAME = 3;
+}
 
 use function cli\line;
 use function cli\prompt;
 
-function run()
+function run($promptText, $gameData)
 {
+
     line('Welcome to Brain Games!');
-    line('Answer "yes" if the number is even, otherwise answer "no".');
+    line('%s', $promptText);
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 
-    $stepNumber = 1;
-    while ($stepNumber < 4) {
-        $value = rand(0, 99);
-        line("Question: %s", $value);
+    for ($stepNumber = 1; $stepNumber <= DefaultValue::LIMIT_COUNT_GAME; $stepNumber++) {
+        $value = $gameData();
+        line("Question: %s", $value[0]);
         $answer = prompt('Your answer');
-        $correctAnswer = ($value % 2 == 0 ? 'yes' : 'no');
+        $correctAnswer = $value[1];
         if ($answer == $correctAnswer) {
             line("Correct!");
         } else {
@@ -25,9 +30,8 @@ function run()
             line("Let's try again, %s!", $name);
             break;
         }
-        $stepNumber++;
-    }
-    if ($stepNumber == 4) {
-        line("Congratulations, %s!", $name);
+        if ($stepNumber == 3) {
+            line("Congratulations, %s!", $name);
+        }
     }
 }

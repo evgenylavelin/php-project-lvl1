@@ -10,8 +10,10 @@
       ],
     "autoload": {
         "files": [
-            "src/cli.php",
-            "src/CheckToEvenNumber.php"
+            "src/GameStarter.php",
+            "src/games/cli.php",
+            "src/games/CheckToEvenNumber.php",
+            "src/games/Calc.php"
         ]
     },
     "require-dev": {

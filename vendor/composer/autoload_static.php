@@ -8,8 +8,10 @@ class ComposerStaticInit38c41451413a055ceab5561716aeca6b
 {
     public static $files = array (
         'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
-        '94d107874694a1d3395d429300cc70be' => __DIR__ . '/../..' . '/src/cli.php',
-        '5504fe99a7d036c23e14935837af5ec3' => __DIR__ . '/../..' . '/src/CheckToEvenNumber.php',
+        '79edc1773484ce058f0a4b3c7e626460' => __DIR__ . '/../..' . '/src/GameStarter.php',
+        '1423498556462f22f6043ca8d0428de2' => __DIR__ . '/../..' . '/src/games/cli.php',
+        '4ef7921a3aa9ae03557bfabf68c929ad' => __DIR__ . '/../..' . '/src/games/CheckToEvenNumber.php',
+        '1d12d59e027ca08e627dbdf0c6524f74' => __DIR__ . '/../..' . '/src/games/Calc.php',
     );
 
     public static $prefixesPsr0 = array (
