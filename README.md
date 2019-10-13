@@ -8,4 +8,9 @@
 [![asciicast](https://asciinema.org/a/0III4JSERPVCI1WuxySC0Qgsc.svg)](https://asciinema.org/a/0III4JSERPVCI1WuxySC0Qgsc)
 
 Запуск игры brain-calc:
+
 [![asciicast](https://asciinema.org/a/tMHIgAokhMQV3Gl5CrZDuwnWN.svg)](https://asciinema.org/a/tMHIgAokhMQV3Gl5CrZDuwnWN)
+
+Запуск игры brain-gsd:
+
+[![asciicast](https://asciinema.org/a/1lekqkgUvluFWxeJbvQ3aRmW0.svg)](https://asciinema.org/a/1lekqkgUvluFWxeJbvQ3aRmW0)
