@@ -4,4 +4,8 @@
 [![Build Status](https://travis-ci.org/evgenylavelin/php-project-lvl1.svg?branch=master)](https://travis-ci.org/evgenylavelin/php-project-lvl1)
 
 Установка пакета глобально:
+
 [![asciicast](https://asciinema.org/a/0III4JSERPVCI1WuxySC0Qgsc.svg)](https://asciinema.org/a/0III4JSERPVCI1WuxySC0Qgsc)
+
+Запуск игры brain-calc:
+[![asciicast](https://asciinema.org/a/tMHIgAokhMQV3Gl5CrZDuwnWN.svg)](https://asciinema.org/a/tMHIgAokhMQV3Gl5CrZDuwnWN)
