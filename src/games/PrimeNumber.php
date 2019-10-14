@@ -27,7 +27,6 @@ function run()
         $result[] = $value1;
         $result[] = checkPrime($value1);
         
-        print_r($result);
         return $result;
     };
     
