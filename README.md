@@ -14,3 +14,7 @@
 Запуск игры brain-gsd:
 
 [![asciicast](https://asciinema.org/a/1lekqkgUvluFWxeJbvQ3aRmW0.svg)](https://asciinema.org/a/1lekqkgUvluFWxeJbvQ3aRmW0)
+
+Запуск игры brain-progression:
+
+[![asciicast](https://asciinema.org/a/sHa3G3LQMyIcFCN5AIM5NfJ0O.svg)](https://asciinema.org/a/sHa3G3LQMyIcFCN5AIM5NfJ0O)
