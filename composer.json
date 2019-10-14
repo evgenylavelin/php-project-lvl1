@@ -9,7 +9,8 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gsd",
-        "bin/brain-progression"        
+        "bin/brain-progression",
+        "bin/brain-prime"
       ],
     "autoload": {
         "files": [
@@ -18,7 +19,8 @@
             "src/games/CheckToEvenNumber.php",
             "src/games/Calc.php",
             "src/games/Gsd.php",
-            "src/games/Progression.php"            
+            "src/games/Progression.php",
+            "src/games/PrimeNumber.php"
         ]
     },
     "require-dev": {
