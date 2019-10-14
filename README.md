@@ -18,3 +18,7 @@
 Запуск игры brain-progression:
 
 [![asciicast](https://asciinema.org/a/sHa3G3LQMyIcFCN5AIM5NfJ0O.svg)](https://asciinema.org/a/sHa3G3LQMyIcFCN5AIM5NfJ0O)
+
+Запуск игры brain-prime:
+
+[![asciicast](https://asciinema.org/a/S8b6MB2McxS4Ag2gnideEVCxV.svg)](https://asciinema.org/a/S8b6MB2McxS4Ag2gnideEVCxV)
