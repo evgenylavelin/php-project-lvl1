@@ -1,5 +1,17 @@
 {
     "description": "php project #1. Hexlet",
+    "keywords": [
+        "game",
+        "hexlet",
+        "project"
+    ],
+    "type": "project",
+    "authors": [
+        {
+            "name": "Evgeny Lavelin",
+            "email": "evgenylavelin@gmail.com"
+        }
+    ],
     "name": "evgenylavelin/php-project-lvl1",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.11"
