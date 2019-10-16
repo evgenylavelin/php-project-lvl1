@@ -11,9 +11,9 @@
 
 [![asciicast](https://asciinema.org/a/tMHIgAokhMQV3Gl5CrZDuwnWN.svg)](https://asciinema.org/a/tMHIgAokhMQV3Gl5CrZDuwnWN)
 
-Запуск игры brain-gsd:
+Запуск игры brain-gсd:
 
-[![asciicast](https://asciinema.org/a/1lekqkgUvluFWxeJbvQ3aRmW0.svg)](https://asciinema.org/a/1lekqkgUvluFWxeJbvQ3aRmW0)
+[![asciicast](https://asciinema.org/a/uwL5ygbUOHJyoFQAN7DmliL3E.svg)](https://asciinema.org/a/uwL5ygbUOHJyoFQAN7DmliL3E)
 
 Запуск игры brain-progression:
 
