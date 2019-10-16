@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\games\Gsd;
+namespace BrainGames\games\Gcd;
 
 use function BrainGames\games\run as startGame;
 
@@ -9,13 +9,13 @@ class DefaultValue
     public const PROMPT_TEXT = 'Find the greatest common divisor of given numbers.';
 }
 
-function calcGsd($value1, $value2)
+function calcGcd($value1, $value2)
 {
     if ($value2 == 0) {
         return $value1;
     }
 
-    return calcGsd($value2, $value1 % $value2);
+    return calcGcd($value2, $value1 % $value2);
 }
 
 function run()
@@ -24,8 +24,8 @@ function run()
         $value1 = rand(1, 100);
         $value2 = rand(1, 100);
         $result = [];
-        $result[] = "{$value1} gsd {$value2}";
-        $result[] = calcGsd($value1, $value2);
+        $result[] = "{$value1} gcd {$value2}";
+        $result[] = calcGcd($value1, $value2);
         return $result;
     };
     

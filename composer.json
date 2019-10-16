@@ -20,7 +20,7 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gsd",
+        "bin/brain-gcd",
         "bin/brain-progression",
         "bin/brain-prime"
       ],
@@ -30,7 +30,7 @@
             "src/games/cli.php",
             "src/games/CheckToEvenNumber.php",
             "src/games/Calc.php",
-            "src/games/Gsd.php",
+            "src/games/Gcd.php",
             "src/games/Progression.php",
             "src/games/PrimeNumber.php"
         ]
