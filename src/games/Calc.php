@@ -17,17 +17,15 @@ function run()
         $operations = ['*','+','-'];
         $operation = $operations[array_rand($operations)];
         $result = [];
+        $result[] = "{$value1} {$operation} {$value2}";
         switch ($operation) {
             case '*':
-                $result[] = "{$value1} * {$value2}";
                 $result[] = $value1 * $value2;
                 break;
             case '+':
-                $result[] = "{$value1} + {$value2}";
                 $result[] = $value1 + $value2;
                 break;
             case '-':
-                $result[] = "{$value1} - {$value2}";
                 $result[] = $value1 - $value2;
                 break;
         }
