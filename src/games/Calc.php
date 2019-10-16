@@ -14,18 +14,19 @@ function run()
     $getGameDataFunction = function () {
         $value1 = rand(1, 10);
         $value2 = rand(1, 10);
-        $operation = rand(0, 2);
+        $operations = ['*','+','-'];
+        $operation = $operations[array_rand($operations)];
         $result = [];
         switch ($operation) {
-            case 0:
+            case '*':
                 $result[] = "{$value1} * {$value2}";
                 $result[] = $value1 * $value2;
                 break;
-            case 1:
+            case '+':
                 $result[] = "{$value1} + {$value2}";
                 $result[] = $value1 + $value2;
                 break;
-            case 2:
+            case '-':
                 $result[] = "{$value1} - {$value2}";
                 $result[] = $value1 - $value2;
                 break;
