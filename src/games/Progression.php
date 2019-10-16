@@ -4,12 +4,6 @@ namespace BrainGames\games\Progression;
 
 use function BrainGames\games\run as startGame;
 
-class DefaultValue
-{
-    public const PROMPT_TEXT = 'What number is missing in the progression?';
-    public const LENGTH_PROGRESSION = 10;
-}
-
 function getProgresion($startProgression, $step, $length)
 {
     $result = [];
@@ -22,12 +16,11 @@ function getProgresion($startProgression, $step, $length)
 function run()
 {
     $getGameDataFunction = function () {
-        
-        $secretPosition = rand(0, DefaultValue::LENGTH_PROGRESSION - 1);
+        $lengthProgression = 10;
         $startProgression = rand(1, 90);
         $stepProgression = rand(1, 10);
-        $lengthProgression = 10;
-        $Progression = getProgresion($startProgression, $stepProgression, DefaultValue::LENGTH_PROGRESSION);
+        $secretPosition = rand(0, $lengthProgression - 1);
+        $Progression = getProgresion($startProgression, $stepProgression, $lengthProgression);
         $secretNumber = $Progression[$secretPosition];
         $Progression[$secretPosition] = "**";
         $result = [];
@@ -37,5 +30,5 @@ function run()
         return $result;
     };
     
-    startGame(DefaultValue::PROMPT_TEXT, $getGameDataFunction);
+    startGame('What number is missing in the progression?', $getGameDataFunction);
 }

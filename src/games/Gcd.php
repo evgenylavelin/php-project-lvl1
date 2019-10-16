@@ -4,11 +4,6 @@ namespace BrainGames\games\Gcd;
 
 use function BrainGames\games\run as startGame;
 
-class DefaultValue
-{
-    public const PROMPT_TEXT = 'Find the greatest common divisor of given numbers.';
-}
-
 function calcGcd($value1, $value2)
 {
     if ($value2 == 0) {
@@ -29,5 +24,5 @@ function run()
         return $result;
     };
     
-    startGame(DefaultValue::PROMPT_TEXT, $getGameDataFunction);
+    startGame('Find the greatest common divisor of given numbers.', $getGameDataFunction);
 }

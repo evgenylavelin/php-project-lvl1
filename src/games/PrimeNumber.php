@@ -4,11 +4,6 @@ namespace BrainGames\games\PrimeNumber;
 
 use function BrainGames\games\run as startGame;
 
-class DefaultValue
-{
-    public const PROMPT_TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-}
-
 function checkPrime($num)
 {
     for ($ind = 2; $ind <= sqrt($num); $ind++) {
@@ -30,5 +25,5 @@ function run()
         return $result;
     };
     
-    startGame(DefaultValue::PROMPT_TEXT, $getGameDataFunction);
+    startGame('Answer "yes" if given number is prime. Otherwise answer "no"', $getGameDataFunction);
 }

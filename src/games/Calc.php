@@ -4,11 +4,6 @@ namespace BrainGames\games\Calc;
 
 use function BrainGames\games\run as startGame;
 
-class DefaultValue
-{
-    public const PROMPT_TEXT = 'What is the result of the expression?';
-}
-
 function run()
 {
     $getGameDataFunction = function () {
@@ -32,5 +27,5 @@ function run()
         return $result;
     };
     
-    startGame(DefaultValue::PROMPT_TEXT, $getGameDataFunction);
+    startGame('What is the result of the expression?', $getGameDataFunction);
 }
