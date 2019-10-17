@@ -19,10 +19,9 @@ function run($promptText, $gameData)
     line("Hello, %s!", $name);
 
     for ($stepNumber = 1; $stepNumber <= DefaultValue::LIMIT_COUNT_GAME; $stepNumber++) {
-        $value = $gameData();
-        line("Question: %s", $value[0]);
+        [$textQuestion, $correctAnswer] = $gameData();
+        line("Question: %s", $textQuestion);
         $answer = prompt('Your answer');
-        $correctAnswer = $value[1];
         if ($answer == $correctAnswer) {
             line("Correct!");
         } else {
