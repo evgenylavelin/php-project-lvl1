@@ -27,7 +27,6 @@
     "autoload": {
         "files": [
             "src/GameStarter.php",
-            "src/games/cli.php",
             "src/games/CheckToEvenNumber.php",
             "src/games/Calc.php",
             "src/games/Gcd.php",
