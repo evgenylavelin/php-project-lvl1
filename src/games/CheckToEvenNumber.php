@@ -4,11 +4,16 @@ namespace BrainGames\games\CheckToEvenNumber;
 
 use function BrainGames\games\run as startGame;
 
+function isEven($number)
+{
+    return $number % 2 == 0;
+}
+
 function run()
 {
     $getGameDataFunction = function () {
         $result[] = rand(1, 99);
-        $result[] = ($result[0] % 2 == 0 ? 'yes' : 'no');
+        $result[] = (isEven($result[0]) ? 'yes' : 'no');
         
         return $result;
     };
