@@ -4,6 +4,8 @@ namespace BrainGames\games\Gcd;
 
 use function BrainGames\games\run as startGame;
 
+const PROMPT_TEXT = 'Find the greatest common divisor of given numbers.';
+
 function calcGcd($value1, $value2)
 {
     if ($value2 == 0) {
@@ -15,14 +17,16 @@ function calcGcd($value1, $value2)
 
 function run()
 {
-    $getGameDataFunction = function () {
+    $getGameData = function () {
+        
         $value1 = rand(1, 100);
         $value2 = rand(1, 100);
-        $result = [];
-        $result[] = "{$value1} gcd {$value2}";
-        $result[] = calcGcd($value1, $value2);
-        return $result;
+        
+        $question = "{$value1} gcd {$value2}";
+        $answer = calcGcd($value1, $value2);
+
+        return [$question, $answer];
     };
     
-    startGame('Find the greatest common divisor of given numbers.', $getGameDataFunction);
+    startGame(PROMPT_TEXT, $getGameData);
 }

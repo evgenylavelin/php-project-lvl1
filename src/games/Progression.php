@@ -4,6 +4,12 @@ namespace BrainGames\games\Progression;
 
 use function BrainGames\games\run as startGame;
 
+const LENGTH_PROGRESSION = 10;
+const MAX_STEP_PROGRESSION = 10;
+const MAX_START_PROGRESSION = 90;
+
+const PROMPT_TEXT = 'What number is missing in the progression?';
+
 function getProgresion($startProgression, $step, $length)
 {
     $result = [];
@@ -15,20 +21,21 @@ function getProgresion($startProgression, $step, $length)
 
 function run()
 {
-    $getGameDataFunction = function () {
-        $lengthProgression = 10;
-        $startProgression = rand(1, 90);
-        $stepProgression = rand(1, 10);
-        $secretPosition = rand(0, $lengthProgression - 1);
-        $Progression = getProgresion($startProgression, $stepProgression, $lengthProgression);
-        $secretNumber = $Progression[$secretPosition];
-        $Progression[$secretPosition] = "**";
-        $result = [];
-        $result[] = implode(",", $Progression);
-        $result[] = $secretNumber;
+    $getGameData = function () {
 
-        return $result;
+        $startProgression = rand(1, MAX_START_PROGRESSION);
+        $stepProgression = rand(1, MAX_STEP_PROGRESSION);
+        $secretElementPosition = rand(0, LENGTH_PROGRESSION - 1);
+
+        $progression = getProgresion($startProgression, $stepProgression, LENGTH_PROGRESSION);
+
+        $answer = $progression[$secretElementPosition];
+
+        $progression[$secretElementPosition] = "**";
+        $question = implode(",", $progression);
+
+        return [$question, $answer];
     };
     
-    startGame('What number is missing in the progression?', $getGameDataFunction);
+    startGame(PROMPT_TEXT, $getGameData);
 }

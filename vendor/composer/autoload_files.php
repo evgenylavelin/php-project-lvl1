@@ -12,5 +12,5 @@ return array(
     '1d12d59e027ca08e627dbdf0c6524f74' => $baseDir . '/src/games/Calc.php',
     '2e22ce71de25ad7c117f5b804c230aeb' => $baseDir . '/src/games/Gcd.php',
     '3735e1b69a4a5861fffc987e3fc4d653' => $baseDir . '/src/games/Progression.php',
-    'e2806817ec0f43a8ed73616550d4b786' => $baseDir . '/src/games/PrimeNumber.php',
+    '126b0e05a8f3fb9b63017e87cf42b9a8' => $baseDir . '/src/games/Prime.php',
 );

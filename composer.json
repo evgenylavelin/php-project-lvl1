@@ -31,7 +31,7 @@
             "src/games/Calc.php",
             "src/games/Gcd.php",
             "src/games/Progression.php",
-            "src/games/PrimeNumber.php"
+            "src/games/Prime.php"
         ]
     },
     "require-dev": {

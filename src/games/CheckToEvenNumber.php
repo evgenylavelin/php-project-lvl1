@@ -4,6 +4,8 @@ namespace BrainGames\games\CheckToEvenNumber;
 
 use function BrainGames\games\run as startGame;
 
+const PROMPT_TEXT = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 function isEven($number)
 {
     return $number % 2 == 0;
@@ -11,12 +13,13 @@ function isEven($number)
 
 function run()
 {
-    $getGameDataFunction = function () {
-        $result[] = rand(1, 99);
-        $result[] = (isEven($result[0]) ? 'yes' : 'no');
+    $getGameData = function () {
         
-        return $result;
+        $question = rand(1, 99);
+        $answer = (isEven($question) ? 'yes' : 'no');
+        
+        return [$question, $answer];
     };
     
-    startGame('Answer "yes" if the number is even, otherwise answer "no".', $getGameDataFunction);
+    startGame(PROMPT_TEXT, $getGameData);
 }

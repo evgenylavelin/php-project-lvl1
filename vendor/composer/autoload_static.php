@@ -13,7 +13,7 @@ class ComposerStaticInit38c41451413a055ceab5561716aeca6b
         '1d12d59e027ca08e627dbdf0c6524f74' => __DIR__ . '/../..' . '/src/games/Calc.php',
         '2e22ce71de25ad7c117f5b804c230aeb' => __DIR__ . '/../..' . '/src/games/Gcd.php',
         '3735e1b69a4a5861fffc987e3fc4d653' => __DIR__ . '/../..' . '/src/games/Progression.php',
-        'e2806817ec0f43a8ed73616550d4b786' => __DIR__ . '/../..' . '/src/games/PrimeNumber.php',
+        '126b0e05a8f3fb9b63017e87cf42b9a8' => __DIR__ . '/../..' . '/src/games/Prime.php',
     );
 
     public static $prefixesPsr0 = array (
