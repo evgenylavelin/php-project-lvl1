@@ -13,8 +13,8 @@ const PROMPT_TEXT = 'What number is missing in the progression?';
 function getProgresion($startProgression, $step, $length)
 {
     $result = [];
-    for ($ind = 0; $ind < $length; $ind++) {
-        $result[] = $startProgression + $ind * $step;
+    for ($i = 0; $i < $length; $i++) {
+        $result[] = $startProgression + $i * $step;
     }
     return $result;
 }

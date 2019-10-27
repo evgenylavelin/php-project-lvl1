@@ -2,7 +2,7 @@
 
 namespace BrainGames\games;
 
-const LIMIT_COUNT_GAME = 3;
+const GAMES_COUNT = 3;
 
 use function cli\line;
 use function cli\prompt;
@@ -15,7 +15,7 @@ function run($promptText, $getgameData)
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 
-    for ($stepNumber = 1; $stepNumber <= LIMIT_COUNT_GAME; $stepNumber++) {
+    for ($step = 1; $step <= GAMES_COUNT; $step++) {
         [$textQuestion, $correctAnswer] = $getgameData();
         line("Question: %s", $textQuestion);
         $answer = prompt('Your answer');

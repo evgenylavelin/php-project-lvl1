@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\games\CheckToEvenNumber;
+namespace BrainGames\games\Even;
 
 use function BrainGames\games\run as startGame;
 

@@ -20,10 +20,8 @@ function run()
 {
     $getGameData = function () {
 
-        $value1 = rand(1, 100);
-        
-        $question = $value1;
-        $answer = (isPrime($value1) ? 'yes' : 'no');
+        $question = rand(1, 100);
+        $answer = (isPrime($question) ? 'yes' : 'no');
         
         return [$question, $answer];
     };
