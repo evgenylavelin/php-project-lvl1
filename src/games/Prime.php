@@ -8,8 +8,8 @@ const PROMPT_TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 function isPrime($num)
 {
-    for ($ind = 2; $ind <= sqrt($num); $ind++) {
-        if (!($num % $ind)) {
+    for ($i = 2; $i <= sqrt($num); $i++) {
+        if (!($num % $i)) {
             return false;
         }
     }
